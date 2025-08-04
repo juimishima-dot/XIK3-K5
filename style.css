@@ -478,22 +478,6 @@ nav {
     margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
-    .about-content {
-        padding: 24px;
-        margin: 40px 16px;
-    }
-
-    .about-content h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .about-content p {
-        text-align: center;
-    }
-}
-
 .dashboard-style {
   padding-top: 40px;
   display: flex;
@@ -1058,4 +1042,5 @@ textarea#isi-jurnal:focus {
     transform-style: preserve-3d;
     transform: perspective(1000px); /* Memberi 'kedalaman' 3D */
     transition: transform 0.1s ease; /* Transisi lebih cepat agar responsif */
+
 }
