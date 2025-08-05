@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Landscape Welcome Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    
+
+<header>
+    <nav>
+        <div class="logo">KELOMPOK-5</div>
+        <ul class="nav-links">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li class="protected-link"><a href="about.html">About</a></li>
+                <li class="protected-link"><a href="journal.html">Journal</a></li>
+                <li class="protected-link"><a href="contact.html">Contact</a></li>
+                <li class="protected-link"><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="hero-section">
+    <div class="parallax-bg">   
+        <div class="layer layer-sky" data-speed="-0.5"></div>
+        <div class="layer layer-mountains-back" data-speed="-0.2"></div>
+        <div class="layer layer-mountains-front" data-speed="0.1"></div>
+        <div class="layer layer-foreground" data-speed="0.4"></div>
+        <div class="moon" data-speed="-0.3"></div>
+
+
+    </div>
+    
+    <div class="hero-content">
+        <h1>LANDSCAPE</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+        <p> Read More</p>
+        <a href="about.html" class="btn btn-secondary ripple">Read More</a>
+    </div>
+</main>
+
+<script src="script.js"></script>
+<script>
+    if (localStorage.getItem('isLoggedIn') !== 'true') {
+        window.location.href = 'login.html';
+    }
+</script>
+</body>
+</html>

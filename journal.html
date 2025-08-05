@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal PKL - Kelompok 5</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">KELOMPOK-5</div>
+            <ul class="nav-links">
+                <li class="protected-link"><a href="home.html">Home</a></li>
+                <li class="protected-link"><a href="about.html">About</a></li>
+                <li><a href="journal.html" class="active">Journal</a></li>
+                <li class="protected-link"><a href="contact.html">Contact</a></li>
+                <li class="protected-link"><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="journal-page">
+        <div class="journal-form-container animate-fade-up">
+            <h1>Journal PKL</h1>
+            <h2>Tambah Journal Baru</h2>
+            <form id="journal-form">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama kamu" required>
+                </div>
+                <div class="form-group">
+                    <label for="kelas">Kelas</label>
+                    <input type="text" id="kelas" placeholder="Masukkan kelas kamu" required>
+                </div>
+                <div class="form-group">
+                    <label for="isi-jurnal">Jurnal PKL</label>
+                    <textarea id="isi-jurnal" rows="5" placeholder="Tuliskan kegiatan PKL anda di sini..." required></textarea>
+                </div>
+                <button type="submit" class="btn-simpan-jurnal">Simpan Journal</button>
+            </form>
+        </div>
+        <div class="journal-list-container">
+            <h2>Semua Journal</h2>
+            <div id="journal-list" class="journal-grid">
+                </div>
+        </div>
+        <div id="toast-notification" class="toast">
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+    <script>
+    if (localStorage.getItem('isLoggedIn') !== 'true') {
+        window.location.href = 'login.html';
+    }
+</script>
+</body>
+</html>
