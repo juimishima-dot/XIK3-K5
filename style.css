@@ -1057,4 +1057,24 @@ textarea#isi-jurnal:focus {
     transform-style: preserve-3d;
     transform: perspective(1000px); /* Memberi 'kedalaman' 3D */
     transition: transform 0.1s ease; /* Transisi lebih cepat agar responsif */
+
+}
+
+.btn-register {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #22c55e; /* hijau biar beda dengan login */
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 12px; /* jarak dari tombol login */
+}
+
+.btn-register:hover {
+  background-color: #16a34a;
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.6);
 }
